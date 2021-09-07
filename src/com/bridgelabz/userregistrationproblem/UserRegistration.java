@@ -44,7 +44,7 @@ public class UserRegistration {
 	}
 
 	private static boolean passwordValidation(String password) {
-		String passwordValidation = "[a-zA-Z]{8,}";
+		String passwordValidation = "(?=.*[A-Z])[a-zA-Z]{8,}";
 		return Pattern.matches(passwordValidation, password);
 	}
 
